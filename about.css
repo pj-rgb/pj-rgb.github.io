@@ -62,7 +62,8 @@ body {
 .nav-container a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
+    font-size: 24px;
+    font-family: "raleway";
     transition: color 0.3s;
 }
 
