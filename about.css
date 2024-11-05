@@ -1,0 +1,244 @@
+body {
+    font-family: "Helvetica Neue";
+    margin: 0;
+    position: relative;
+
+}
+
+.container {
+    flex-shrink: 0;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Distributes space evenly between SVG and nav */
+    align-items: center;
+    margin-bottom: 20px;
+    background: url(noisy-gradients.jpg) lightgray 50% / cover no-repeat; /* Set background image for the entire body */
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left-side {
+    justify-content: left;
+    position: relative;
+    padding-right: 50px;
+}
+
+.right-side {
+    justify-content: right;
+    width: 50%;
+    position: relative;
+}
+
+.right-side img {
+        width: 550px; /* Make images responsive */
+        height: 400px;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    transition: transform 0.5s ease;
+}
+
+.nav-container {
+    display: flex;
+    gap: 76px; /* Ensure 76px spacing between each nav item */
+    margin-left: auto; /* Align the nav to the right */
+    margin-right: 50px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-container a:hover,
+.social-icon:hover {
+    color: #0056B3; /* Change color on hover */
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.linkedin-icon:hover {
+    color: #00A0DC;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 192px */
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+h2 {
+    color: #000;
+    text-align: left;
+    font-family: "Raleway";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+    letter-spacing: 0.2px;
+    width: 860px;
+    position: relative;
+}
+
+h3 {
+    color: #000;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 150%; /* 192px */
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+h4 {
+    color: #000;
+    text-align: left;
+    font-family: "Raleway";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 150%; /* 60px */
+    letter-spacing: 0.2px;
+    width: 860px;
+    position: relative;
+}
+
+
+p {
+    color: #000;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 150%; /* 192px */
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+h5 {
+    color: #000;
+    text-align: center;
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 150%; /* 192px */
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+h6 {
+    color: #000;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 192px */
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+
+
+
+.image-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-top: 40px;
+
+}
+
+.image-grid h3 {
+    font-size: 32px; /* Adjust heading size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.image-item {
+    margin: 10px; /* Add margin around each item */
+    text-align: center; /* Center text for captions */
+}
+
+.image-item img {
+    max-width: 50%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add some border radius */
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+
+.image-item img:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+.image-item p {
+    font-size: 16px; /* Caption font size */
+    color: #333; /* Caption text color */
+    margin-top: 8px; /* Space above caption */
+}
+
+.middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.bottom-half {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.bottom-container h3 {
+    list-style-type: none; /* Removes bullet points */
+    margin-bottom: 10px;
+}
+
+.experience-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+}
+
+.experience-list li {
+    margin-bottom: 16px; /* Adds space between list items */
+}
+
+.experience-list strong {
+    font-size: 20; /* Increases size by roughly 8px (adjust as needed) */
+    display: inline-block; /* Allows margin below */
+    margin-bottom: 5px; /* Adds space between strong text and job title */
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: url(noisy-gradients.jpg) lightgray 50% / cover no-repeat; /* Set background image for the entire body */
+}
